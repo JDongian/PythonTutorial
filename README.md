@@ -1,4 +1,34 @@
 PythonTutorial
 ==============
 
-Welcome to python in 2+2 hours!
+Welcome to Python in 2+2 hours!
+
+This is the beginner's introduction to Python 3 by IEEE:CS.
+
+
+We assume you come from a C/C++ background, and are interested in something fun to add to your repitoire. Python is concise, popular, and fun. Easily spin up web APIs, format text, implement machine learning algo's, or anything you can think of with Python's huge module support.
+
+
+*day0*:
+
+Python setup tools, if you want to dev on your own machine (highly reccomended). We will provide servers to ssh into.
+
+
+*day1*:
+What Python is and what it can do; an introduction to idiomatic Python and challenges that python solves easily.
+
+Part 1
+
+* Text manipulation and file I/O with Python
+* EE312 2013f project1 in Python
+
+Part 2
+
+We'll get you started on a HackerNews scraper that demos the all-awesome requests library as well as BeautifulSoup's super cool HTML parsing abilities.
+
+
+*day2*:
+Now that you've dabbled in some Python, it's time to take on the more interesting problems. Learn the proper way to benchmark your programs and take advantage of Python's data structures to build large applications. We'll show how to go about crawling the web with Python.
+
+
+All content is subject to change, as this is a work in progress.
