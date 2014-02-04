@@ -1,7 +1,7 @@
 PythonTutorial
 ==============
 
-Welcome to Python in 2+2 hours!
+Welcome to Python3.3 in 2 hours!
 
 This is the beginner's introduction to Python 3 by IEEE:CS.
 
@@ -28,12 +28,6 @@ Part 1
 Part 2
 
 We'll get you started on a HackerNews scraper that demos the all-awesome requests library as well as BeautifulSoup's super cool HTML parsing abilities.
-
-
-*day2*
-
-Now that you've dabbled in some Python, it's time to take on the more interesting problems. Learn the proper way to benchmark your programs and take advantage of Python's data structures to build large applications. We'll show how to go about crawling the web with Python. Or some other super cool project.
-
 
 
 All content is subject to change, as this is a work in progress.
