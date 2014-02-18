@@ -4,11 +4,12 @@
 *python3, ipython3
 *Python 3 vs 2
 ***Diffs: {
-    +unicode, -division, +print(), -reduce(), -raw_input()
+    +unicode, -division, +print(), -reduce(), -raw_input(), generators
 }
 
 *The python docs and interpreter are the best source information.
 *Please ask questions! This lecture is for YOU!
+*Point out things you don't understand - shows you are thinking.
 
 ====
 ***Python duck typing: "looks like a duck -> is a duck"
