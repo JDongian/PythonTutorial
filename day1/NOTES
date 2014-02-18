@@ -1,0 +1,66 @@
+*Hello!
+
+*ssh pls
+*python3, ipython3
+*Python 3 vs 2
+***Diffs: {
+    +unicode, -division, +print(), -reduce(), -raw_input()
+}
+
+*The python docs and interpreter are the best source information.
+*Please ask questions! This lecture is for YOU!
+
+====
+***Python duck typing: "looks like a duck -> is a duck"
+"""When I see a bird that
+walks like a duck
+and swims like a duck
+and quacks like a duck,
+I call that bird a duck."""
+Nice things: {
+    int() str() chr() ord()
+    set() list() dict()
+}
+###
+###example0: hello world, basic python data types
+###
+>>>hex(int(n,8))
+====
+%%%Begin exercise 1:
+User types input, python reverses captialization.
+{
+    >>>while True: print(input())
+    >>>''.join(chr(c) for c in range(ord('A'), ord('z')))
+}
+!!!WAIT UNTIL AFTER EXAMPLE 1 LIST COMPREHENSION TO GET ANSWER
+====
+###
+###example1: using abstract data types
+###
+>>>from example1 import *
+{
+    list, tuple, set, dict,
+    frozenset
+}
+***type() function
+*list comprehensions most powerful
+*access/modification/adding/deletion is straightforward
+====
+%%%Exercise 1:
+>>>''.join([c.upper() if c.islower() else c.lower() for c in input()])
+====
+###
+###example2: file I/O, array manipulation
+###
+***The most important modes are 'r' and 'w'.
+***Array splicing is one of Python's best features
+====
+###
+###example3: Simple application of Python
+###
+*Translated from Chase's C++ class
+*Much shorter
+*Very readable
+*Focus on the algorithm, not the implementation
+====
+

@@ -8,6 +8,7 @@
 print("Hello, world")
 
 # Your turn:
-# Using your newfound knowledge of Python in addition to your existing
-# knowledge of C, write a program that prints the number 0xBEEF in
-# decimal.
+# Using your newfound knowledge of Python,  write a program that prints the
+# value of 0xBEEF in decimal to the terminal.
+#
+# Ask how to convert base 8 to base 16!

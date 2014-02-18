@@ -1,51 +1,44 @@
-"""File I/O and string manipulation example.
-The program queries the user for the name of a file, then outputs a summary of
-the internal contents of the file.
-"""
+example_list0 = []
+example_list1 = [j for j in range(50)]
+example_list2 = ['abcdefghi', 66.25, 333, 333, 1, '', 1234.5]
+example_list3 = [example_list0, example_list1, example_list2]
+#Iterating through lists is easy.
+#for example in example_list3:
+#    print example[:5]
+#for example in example_list1[:5]:
+#    print example**6
 
-def get_file_contents(relative_path):
-    """Return the contents of the given file as a string.
-    """
-    data = ""
-    # The file is opened using "with open(...) as _" syntax.
-    # This ensures safety (the filestream gets closed automatically) as well
-    # as flexibility (you can change the 'r' read mode to 'w' write mode if
-    # needed.
-    with open(relative_path, 'r') as data_in:
-        data = data_in.read()
-    return data
+example_tuple0 = ()
+example_tuple1 = ('a',)
+example_tuple2 = (j for j in range(50))
+example_tuple3 = (example_list0, example_list1, example_list2)
+#Iterating through tuples is nearly the same thing.
+#for example in example_tuple1:
+#    print example
+#for example in example_tuple2:
+#    print example**4
 
-def gen_summary(filedata):
-    """Return a summary of the given file.
-    """
-    # Play around with the array splicing and see what you get.
-    # Fun examples:
-    # [:50:-1]
-    # [len(filedata)/2: 50]
-    # [-250::5]
-    #
-    # Challenge:
-    # Fix the bug that occurs when the file is too short.
-    # There are many ways to handle this - choose one you like best.
+example_set0 = set()
+example_set1 = set(('',))
+example_set2 = set(j for j in range(50))
+example_set3 = set([66.25, 333, 333, 1, 1234.5])
+#Iterating through a set is easy too. Note that sets are unordered.
+#for example in example_set1:
+#    print example
+#for example in example_set3:
+#    print example**4
 
-    beginning = filedata[:50]
-    end = filedata[-50:]
-    summary = "File summary:\n%s\n.\n.\n.\n%s\nEOF" % (beginning, end)
-    return summary
+example_dict0 = dict()
+example_dict1 = {x: x**2 for x in range(5)}
+example_dict2 = dict(sape=4139, guido=4127, jack=4098)
+example_dict3 = {'cow': "Moooo!",
+                 'chicken': "Cluck, cluck.",
+                 'horse': "neigh",
+                 'snake': "Hissssss...."}
+#Iterating through a dictionary is the only one that looks different.
+#for v in example_dict1.values():
+#    print v
+#for k in example_dict2.keys():
+#    print k, example_dict2[k]
 
-if __name__ == "__main__":
-    filename = input("Input a file name to summarize: ")
-    filedata = get_file_contents(filename)
-    file_summary = gen_summary(filedata)
-    print(file_summary)
-
-# Note that the above code has a pedagogical style to it.
-# When doing this casually, 
-#
-# data = open(raw_input("Input a file name to summarize: ")).read()
-# print("File summary:\n%s\n.\n.\n.\n%s\nEOF" % (data[:100], data[-100:]))
-#
-# Produces the same effect, but is more readable because there are only two
-# lines to read.
-#
-# A note for people coming from python2: raw_input() was renamed to input() (PEP 3111).
+# Ask what a frozenset is!
