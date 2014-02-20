@@ -31,14 +31,17 @@ def get_subreddit_words(subreddit):
     return words_found
 
 word_counts_overall = {}
-for subreddit in ("circlejerk", "funny"):
+for subreddit in ("circlejerk", "funny", "pics", "funny", "gaming",
+    "AskReddit", "worldnews", "news", "videos", "IAmA", "todayilearned",
+    "aww", "technology", "AdviceAnimals", "science", "Music", "movies", "bestof", "books"):
     # For each subreddit, add the word frequency count.
     word_list_overall = get_subreddit_words(subreddit)
     add_entries(word_list_overall, word_counts_overall)
 
 # Determine the frequencies for a specific subreddit.
 word_counts_sub = {}
-add_entries(get_subreddit_words(raw_input("Pick a subreddit: ")), word_counts_sub)
+subreddit = raw_input("Pick a subreddit: ")
+add_entries(get_subreddit_words(subreddit), word_counts_sub)
 sorted_words_sub = sorted([(k, word_counts_sub[k]) for k in word_counts_sub.keys()],
         key=lambda x: x[1], reverse=True)
 words_sub, freq_sub= list(zip(*sorted_words_sub))
