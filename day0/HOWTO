@@ -1,8 +1,0 @@
-Make sure to get Python 3.x for this lecture at:
-http://www.python.org/download/
-
-Ubuntu/Debian:
-apt-get install python3
-
-Useful link for Windows users:
-http://www.lfd.uci.edu/~gohlke/pythonlibs/#pip
