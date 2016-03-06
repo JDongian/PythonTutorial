@@ -1,8 +1,9 @@
 # Day 2: On your own
 
 Assuming you've done some programming before, this section should take you
-less than two hours. Here I pose some sample problems that you can work on
-your own. I also provide sample solutions with comments on Python style.
+about two hours, or more depending on how well you write your solutions. Here
+I pose some sample problems that you can work on your own. I also provide
+sample solutions with comments on Python style.
 
 
 ## Project Euler
